@@ -7,44 +7,93 @@
 .app-container {
   background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/numbers-fact-bg.png");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  padding: 20px;
 }
 
 .app-title {
+  text-align: center;
   color: #fff;
   font-family: 'Roboto';
-  font-size: 26px;
   font-weight: 600;
 }
 
 .user-input {
   color: #000;
   font-family: 'Roboto';
-  width: 300px;
-  height: 36px;
   padding: 0 10px;
   border-radius: 8px;
   border-style: none;
   outline: none;
 }
 
-.form-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 30%;
-}
-
 .fact-text {
   text-align: center;
   color: #fff;
   font-family: 'Roboto';
-  font-size: 18px;
-  min-width: 400px;
-  max-width: 500px;
   margin-top: 12px;
   padding: 12px;
 }
+
+@media screen and (max-width: 576px) {
+  .app-title {
+    font-size: 22px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 150px;
+  }
+
+  .user-input {
+    width: 90%;
+    height: 36px;
+  }
+  
+  .fact-text {
+    font-size: 20px;
+    min-width: 300px;
+    max-width: 400px;
+    margin-top: 12px;
+    padding: 12px;
+  }
+}
+
+@media screen and ((min-width: 577px) and (max-width: 1200px)) {
+  .app-title {
+    font-size: 24px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+  }
+
+  .user-input {
+    width: 300px;
+    height: 36px;
+  }
+  
+  .fact-text {
+    font-size: 18px;
+    min-width: 400px;
+    max-width: 500px;
+    margin-top: 12px;
+    padding: 12px;
+  }
+}
+
+
+

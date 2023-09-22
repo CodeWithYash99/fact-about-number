@@ -33,7 +33,7 @@ const App = () => {
   return (
     <Container fluid>
       <Row>
-        <div className='app-container d-flex flex-column justify-content-center'>
+        <div className='app-container'>
           <h1 className='app-title mb-4'>Enter a number to know interesting facts about the number</h1>
           <form className='form-container' onSubmit={onSubmitHandler}>
             <input 
